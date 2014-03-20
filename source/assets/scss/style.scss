@@ -4,8 +4,5 @@
 
 // Bourbon, Bitters & Bourbon Neat
 @import "bourbon/app/assets/stylesheets/_bourbon";
-@import "bitters/app/assets/stylesheets/_bitters";
+@import "bitters/bitters";
 @import "neat/app/assets/stylesheets/_neat";
-
-// Typekit
-@import "typekit";

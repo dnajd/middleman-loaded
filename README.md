@@ -7,18 +7,14 @@ Middleman starter project.
 ## Requirements
 
 * Ruby
+* Bundler
 * Node Package Manager
+* Bower
 
 ## Setup
 
-Installing Bundler & Bwoer
 
-```
-gem install bundler
-sudo npm install -g bower
-```
-
-install gems and packages
+Install Gems and Packages
 
 ```
 bundle install --path=vendor
