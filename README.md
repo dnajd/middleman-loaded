@@ -21,7 +21,8 @@ sudo npm install -g bower
 install gems and packages
 
 ```
-bundle exec rake install_gems_packages
+bundle install --path=vendor
+bower install
 ```
 
 
