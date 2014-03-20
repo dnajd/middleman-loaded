@@ -10,18 +10,18 @@ Middleman loaded with good stuff and configured to kill
 
 ## JS Libraries
 
-|-----------------+------------------------------------------|
-| Heading         | Heading                                  |
-|-----------------|------------------------------------------|
-| jquery          |                                          |
-| bourbon         | A Sass Mixin Library                     |
-| neat            | Grid framework for Sass and Bourbon      |
-| magnific-popup  | responsive lightbox, customizable & fast |
-| royalslider     | lightweight, responsive, themes          |
-| jquery-waypoints| scroll position links                    |
-| fastclick       | remove 300ms mobile delay                |
-| fitvids         | responsive videos                        |
-|-----------------|------------------------------------------|
+
+| Heading           | Heading                                      |
+| ----------------- | -------------------------------------------- |
+| jquery            |                                              |
+| bourbon           | A Sass Mixin Library                         |
+| neat              | Grid framework for Sass and Bourbon          |
+| magnific-popup    | responsive lightbox, customizable & fast     |
+| royalslider       | lightweight, responsive, themes              |
+| jquery-waypoints  | scroll position links                        |
+| fastclick         | remove 300ms mobile delay                    |
+| fitvids           | responsive videos                            |
+| ----------------- |--------------------------------------------- |
 
 
 ## Setup
