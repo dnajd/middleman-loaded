@@ -4,5 +4,7 @@
 
 (function ($) {
 
+	// Init mobileMenu + options
+	$('.mobile-menu').mobileMenu();
 
 })(jQuery);

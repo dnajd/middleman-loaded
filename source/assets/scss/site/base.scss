@@ -1,4 +1,7 @@
-// middleman-loaded base styles
+
+// ------------------------------------------------------------
+// Demo styles
+// ------------------------------------------------------------
 
 .container{
 	max-width: 1000px;
@@ -11,3 +14,99 @@
 }
 .site-main{}
 .site-footer{}
+
+// ------------------------------------------------------------
+// Site Nav
+// ------------------------------------------------------------
+
+.site-nav {
+  @include clearfix;
+
+  .navbar-brand {
+    display: block;
+
+    @include media($medium-screen) {
+      margin-right: $unit;
+      float: left;
+    }
+  }
+
+  .site-logo {
+    display: block;
+    border-radius: 100%;
+    margin: auto;
+  }
+
+  .nav-links {
+    height: 0;
+    overflow: hidden;
+
+    @include media($medium-screen) {
+      height: auto;
+      overflow: auto;
+    }
+
+    a {
+      @include media($medium-screen) {
+        display: block;
+        float: left;
+        line-height: 0;
+        height: 0;
+        padding: 50px $unit;
+      }
+    }
+
+    .nav-right {
+      @include media($medium-screen) {
+        float: right;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+// ------------------------------------------------------------
+// Mobile Menu
+// ------------------------------------------------------------
+
+.mobile-menu {
+  //@include button-reset;
+  position: absolute;
+  top: $unit*2;
+  right: $unit;
+  z-index: 2;
+  text-align: center;
+  color: $primary;
+
+  @include media($medium-screen) {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+    font-size: 2em;
+    line-height: 0;
+    padding: $unit $unit/2;
+    color: inherit;
+    cursor: pointer;
+  }
+}
+
+// Menu active
+.menu-active {
+  .mobile-menu {
+    color: $tertiary;
+  }
+
+  .nav-links {
+    height: auto;
+    overflow: auto;
+    padding: $unit 0 0;
+
+    a {
+      display: block;
+      padding: $unit/2;
+      text-align: center;
+    }
+  }
+}

@@ -7,6 +7,9 @@
 @import "bitters/bitters";                 // not vendor, meant to be overriden
 @import "../vendor/neat-1.4.0/_neat";
 
-// Site
+// iconset
+@import "../vendor/mfglabs-iconset/mfglabs_iconset";
+
+// site
 @import "normalize";
 @import "site/base";

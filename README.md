@@ -36,6 +36,7 @@ Wired up through sprockets & sass
 | jquery-waypoints  | scroll position links                        |
 | fastclick         | remove 300ms mobile delay                    |
 | fitvids           | responsive videos                            |
+| mfglabs-iconset   | Awesome web font icon                        |
 
 
 ## Configuration
