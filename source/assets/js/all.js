@@ -1,15 +1,13 @@
 // Bower
 // =====
-//= require jquery
-//= require fastclick
-//= require magnific-popup
-//= require royalslider/jquery.royalslider.min.js
-//= require jquery-waypoints/waypoints.js
-//= require jquery-waypoints/shortcuts/sticky-elements/waypoints-sticky.js
-//= require mixitup/src/jquery.mixitup.js
-//= require elevatezoom/jquery.elevatezoom.js
-//= require responsive-images.js/responsive-img.js
-//= require fitvids/jquery.fitvids.js
+//= require jquery-2.1.0/jquery.js
+//= require fastclick-0.6.11/fastclick.js
+//= require magnific-popup-0.9.9/jquery.magnific-popup.js
+//= require royalslider/jquery.royalslider.js
+//= require jquery-waypoints-2.0.4/waypoints.js
+//= require jquery-waypoints-2.0.4/waypoints-sticky.js
+//= require responsive-images/responsive-img.js
+//= require fitvids-1.0.3/jquery.fitvids.js
 
 // javascripts
 // ===========

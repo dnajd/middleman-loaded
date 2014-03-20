@@ -36,8 +36,7 @@ set :markdown, parse_block_html: true
 
 # Bower support for Sprockets
 after_configuration do
-  @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
-  sprockets.append_path File.join "#{root}", @bower_config["directory"]
+  sprockets.append_path File.join "#{root}", 'source/assets/vendor'
 end
 
 # Custom helpers

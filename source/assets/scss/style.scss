@@ -3,9 +3,9 @@
 // -------------------------------------------------------------------
 
 // Bourbon, Bitters & Bourbon Neat
-@import "bourbon/app/assets/stylesheets/_bourbon";
-@import "bitters/bitters";
-@import "neat/app/assets/stylesheets/_neat";
+@import "../vendor/bourbon-3.1.8/_bourbon";
+@import "bitters/bitters";                 // not vendor, meant to be overriden
+@import "../vendor/neat-1.4.0/_neat";
 
 // Site
 @import "normalize";

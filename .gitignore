@@ -6,10 +6,10 @@
 
 # Ignore bundler config and packages
 /.bundle
-/vendor
 
 # Ignore the build directory
 /build
+/vendor
 
 # Ignore Sass' cache
 /.sass-cache
