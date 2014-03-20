@@ -1,0 +1,297 @@
+---
+title: markdown
+---
+
+<div class="container padded module">
+
+# Markdown!
+{: .page-title}
+
+<nav id="toc"></nav>
+
+<!-- This entire page is authored with markdown.
+{: .notice} -->
+
+## Paragraphs
+{: .section-title}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Here's a paragraph with a linebreak,  
+just add 2 spaces at the end of the line.
+
+This paragraph has the intro class applied to it.
+{: .intro}
+
+## Headers
+{: .section-title}
+
+# Page Title
+{: .page-title }
+
+# H1 header
+
+## H2 header
+
+### H3 header
+
+#### H4 header
+
+##### H5 header
+
+###### H6 header
+
+## Code Blocks
+{: .section-title}
+
+#### Ruby
+
+~~~ ruby
+def what?
+  42
+end
+~~~
+
+#### HTML
+
+~~~ html
+<link rel="stylesheet" href="css/style.css" />
+~~~
+
+#### SCSS
+
+~~~ scss
+body {
+  background: red;
+}
+~~~
+
+#### Javascript
+
+~~~ javascript
+console.log("hi");
+~~~
+
+#### Bash
+
+~~~ bash
+# Start your engines
+$ grunt dev
+~~~
+
+## Tables
+{: .section-title }
+
+#### Standard tables
+
+| A simple | table |
+| with multiple | lines|
+
+| Header1 | Header2 | Header3 |
+|:--------|:-------:|--------:|
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|----
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|=====
+| Foot1   | Foot2   | Foot3
+
+
+#### `.rwd` table
+
+|-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------|
+| Heading         | Heading         | Heading         | Heading         | Heading         | Heading         | Heading         | Heading         |
+|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|
+| Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  |
+| Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  |
+| Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  |
+| Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  |
+| Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  |
+|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|
+
+## Horizontal Rules
+{: .section-title }
+
+* * *
+
+---
+
+  _  _  _  _
+
+---------------
+
+## Lists
+{: .section-title }
+
+- Item one
+- Item two
+- Item three
+
+1. This is a list item
+2. And another item
+2. And the third one
+
+- Item one
+    - sub item one
+    - sub item two
+    - sub item three
+- Item two
+
+1. Item one
+    1. sub item one
+    2. sub item two
+    3. sub item three
+
+
+## Blockquotes
+{: .section-title}
+
+> A sample blockquote.
+>
+> >Nested blockquotes are
+> >also possible.
+
+# Definition Lists
+{: .section-title}
+
+term
+: definition
+
+term
+: definition
+
+term
+: definition
+: another definition
+
+## Block Attributes
+{: .section-title}
+
+> Blockquote with a title
+{: title="Blockquote title"}
+
+This is *emphasized*,  
+_this_ too!
+
+This is **strong**,  
+__this__ too!
+
+This w**ork**s as expected!
+
+## Links and Images
+{: .section-title}
+
+A [link](http://kramdown.gettalong.org) to the kramdown homepage.
+
+A [link](http://kramdown.gettalong.org "hp") to the homepage.
+
+A [link][kramdown hp] to the homepage.
+
+[kramdown hp]: http://kramdown.gettalong.org "hp"
+
+A [link][kramdown hp] to the homepage.
+
+[kramdown hp]: http://kramdown.gettalong.org "hp"
+
+An image:  
+![Placeholder Image](http://placehold.it/400x300)
+
+## Inline Code
+{: .section-title}
+
+Use `Kramdown::Document.new(text).to_html`
+to convert the `text` in kramdown
+syntax to HTML.
+
+Use backticks to markup code,
+e.g. `` `code` ``.
+
+## Footnotes
+{: .section-title}
+
+This is a text with a
+footnote[^1].
+
+[^1]: And here is the definition.
+
+This is a text with a
+footnote[^2].
+
+[^2]:
+    And here is the definition.
+
+## Abbreviations
+{: .section-title}
+
+This is an HTML
+example.
+
+*[HTML]: Hyper Text Markup Language
+
+## Inline Attributes
+{: .section-title}
+
+This is *red*{: style="color: red"}.
+
+</div>
+
+<% content_for :css do %>
+<style>
+  .table-of-contents:before, .table-of-contents:after { content: " "; display: table; }
+  .table-of-contents:after { clear: both; }
+  .table-of-contents { margin-bottom: 20px; padding: 1.5em 1.5em 1em; border: 8px solid #eee; }
+  .table-of-contents h2 { margin: 0 0 .75em; }
+  .table-of-contents li { float: left; width: 50%; }
+    @media (min-width: 35em) { .table-of-contents li {width: 33.333%; }}
+    @media (min-width: 45em) { .table-of-contents li {width: 25%; }}
+    @media (min-width: 75em) { .table-of-contents li {width: 20%; }}
+  .table-of-contents li a { display: block; margin: 0 1em .5em 0; }
+</style>
+<% end %>
+
+<% content_for :js do %>
+<script>
+  
+  var $h2s = $('h2').length;
+  console.log("Anything you put here loads last, so you have access to jQuery and all plugins. \n");
+  console.log("var $h2s = $('h2').length;");
+  console.log("There are " + $h2s + " <h2> tags on the page!");
+
+  // Auto ToC
+  (function($){
+    var ToC =
+      "<nav class='table-of-contents'>" +
+        "<h2>Table of Contents:</h2>" +
+        "<ul>";
+
+    var newLine, el, title, link;
+
+    $(".section-title").each(function() {
+
+      el = $(this);
+      title = el.text();
+      link = "#" + el.attr("id");
+
+      newLine =
+        "<li>" +
+          "<a href='" + link + "'>" +
+            title +
+          "</a>" +
+        "</li>";
+
+      ToC += newLine;
+
+    });
+
+    ToC +=
+       "</ul>" +
+      "</nav>";
+
+    $("#toc").prepend(ToC);
+  })(jQuery);
+  
+</script>
+<% end %>
