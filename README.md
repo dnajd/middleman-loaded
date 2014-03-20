@@ -10,7 +10,6 @@ Middleman loaded with good stuff and configured to kill
 
 ## JS Libraries
 
-
 | Heading           | Heading                                      |
 | ----------------- | -------------------------------------------- |
 | jquery            |                                              |
@@ -21,8 +20,6 @@ Middleman loaded with good stuff and configured to kill
 | jquery-waypoints  | scroll position links                        |
 | fastclick         | remove 300ms mobile delay                    |
 | fitvids           | responsive videos                            |
-| ----------------- |--------------------------------------------- |
-
 
 ## Setup
 
