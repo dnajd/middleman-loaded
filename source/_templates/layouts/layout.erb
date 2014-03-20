@@ -14,6 +14,24 @@
   </head>
   
   <body class="<%= page_classes %>">
-    <%= yield %>
+
+    <header class="site-header">
+      <div class="container">
+        <%= partial "nav" %>
+      </div>
+    </header>
+
+    <main class="site-main container">
+      <%= yield %>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <%= partial "footer" %>
+      </div>
+    </footer>
+
+    <%= javascript_include_tag  "all" %>
+    <%= yield_content :js %>
   </body>
 </html>
