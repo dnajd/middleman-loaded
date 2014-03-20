@@ -3,7 +3,7 @@
 task :refresh_bitters do
 
   current_dir = File.dirname(__FILE__)
-  bitters_dest = File.join(current_dir, '/source/assets/scss')
+  bitters_dest = File.join(current_dir, '/source/assets/js')
 
   sh 'cd ' + bitters_dest + ' && bundle exec bitters install '
 end
