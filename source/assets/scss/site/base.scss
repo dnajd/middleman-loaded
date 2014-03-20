@@ -52,7 +52,7 @@
         float: left;
         line-height: 0;
         height: 0;
-        padding: 50px $unit;
+        padding: 10px $unit;
       }
     }
 
@@ -72,7 +72,7 @@
 .mobile-menu {
   //@include button-reset;
   position: absolute;
-  top: $unit*2;
+  top: $unit*1.5;
   right: $unit;
   z-index: 2;
   text-align: center;
