@@ -5,7 +5,6 @@
   "dependencies": {
     "jquery": "2.1.0",
     "bourbon": "https://github.com/thoughtbot/bourbon.git#3.1.8",
-    "bitters": "git@github.com:thoughtbot/bitters.git",
     "neat": "https://github.com/thoughtbot/neat.git#1.4.0",
     "magnific-popup": "https://github.com/dimsemenov/Magnific-Popup.git#~0.9.9",
     "royalslider": "ssh://git@scm.discdrive.bayphoto.com:7999/wt/royalslider.git",
