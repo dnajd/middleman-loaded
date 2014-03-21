@@ -21,6 +21,7 @@
 activate :livereload
 activate :directory_indexes
 activate :automatic_image_sizes
+activate :syntax # code highlighting
 
 set :css_dir, 'assets/scss'
 set :js_dir, 'assets/js'

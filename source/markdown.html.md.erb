@@ -29,6 +29,17 @@ just add 2 spaces at the end of the line.
 ## Headers
 {: .section-title}
 
+
+<% code("markdown") do %> 
+  # H1 header
+  ## H2 header
+  ### H3 header
+  #### H4 header
+  ##### H5 header
+  ###### H6 header
+
+<% end %>
+
 # H1 header
 
 ## H2 header
@@ -46,6 +57,14 @@ just add 2 spaces at the end of the line.
 ## Code Blocks
 {: .section-title}
 
+
+<% code("markdown") do %> 
+  ~~~ language
+	code here
+  ~~~
+
+<% end %>
+
 #### Ruby
 
 ~~~ ruby
@@ -53,8 +72,6 @@ def what?
 	42
 end
 ~~~
-
----
 
 #### HTML
 
@@ -70,15 +87,11 @@ body {
 }
 ~~~
 
----
-
 #### Javascript
 
 ~~~ javascript
 console.log("hi");
 ~~~
-
----
 
 #### Bash
 
@@ -92,55 +105,70 @@ $ grunt dev
 ## Tables
 {: .section-title }
 
-|-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------|
-| Heading         | Heading         | Heading         | Heading         | Heading         | Heading         | Heading         | Heading         |
-|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|
-| Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  |
-| Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  |
-| Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  |
-| Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  |
-| Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  | Price of thing  |
-|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|
+<% code("markdown") do %> 
+  |-----------------+-----------------+-----------------|
+  | Heading         | Heading         | Heading         |
+  |-----------------|-----------------|-----------------|
+  | Price of thing  | Price of thing  | Price of thing  |
+  | Price of thing  | Price of thing  | Price of thing  |
+  | Price of thing  | Price of thing  | Price of thing  |
+  | Price of thing  | Price of thing  | Price of thing  |
+  | Price of thing  | Price of thing  | Price of thing  |
+  |-----------------|-----------------|-----------------|
+  |=====
+  | Foot1   | Foot2   | Foot3
+  
+<% end %>
+
+|-----------------+-----------------+-----------------|
+| Heading         | Heading         | Heading         |
+|-----------------|-----------------|-----------------|
+| Price of thing  | Price of thing  | Price of thing  |
+| Price of thing  | Price of thing  | Price of thing  |
+| Price of thing  | Price of thing  | Price of thing  |
+| Price of thing  | Price of thing  | Price of thing  |
+| Price of thing  | Price of thing  | Price of thing  |
+|-----------------|-----------------|-----------------|
 |=====
 | Foot1   | Foot2   | Foot3
 
 ## Horizontal Rules
 {: .section-title }
 
-* * *
+
+<% code("markdown") do %> 
+  ---
+
+<% end %>
 
 ---
 
-	_  _  _  _
-
----------------
-
 ## Lists
 {: .section-title }
+
+<% code("markdown") do %> 
+  - Item one
+  - Item two
+  - Item three
+
+<% end %>
 
 - Item one
 - Item two
 - Item three
 
-1. This is a list item
-2. And another item
-2. And the third one
-
-- Item one
-		- sub item one
-		- sub item two
-		- sub item three
-- Item two
-
-1. Item one
-		1. sub item one
-		2. sub item two
-		3. sub item three
-
 ---
 
 ## Blockquotes
 {: .section-title}
+
+<% code("markdown") do %> 
+  > A sample blockquote.
+  >
+  > >Nested blockquotes are
+  > >also possible.
+
+<% end %>
 
 > A sample blockquote.
 >
@@ -149,6 +177,20 @@ $ grunt dev
 
 # Definition Lists
 {: .section-title}
+
+
+<% code("markdown") do %> 
+  term
+  : definition
+
+  term
+  : definition
+
+  term
+  : definition
+  : another definition
+
+<% end %>
 
 term
 : definition
@@ -164,6 +206,20 @@ term
 
 ## Block Attributes
 {: .section-title}
+
+<% code("markdown") do %> 
+  > Blockquote with a title
+  {: title="Blockquote title"}
+
+  This is *emphasized*,
+  _this_ too!
+
+  This is **strong**,
+  __this__ too!
+
+  This w**ork**s as expected!
+
+<% end %>
 
 > Blockquote with a title
 {: title="Blockquote title"}
@@ -181,25 +237,31 @@ This w**ork**s as expected!
 ## Links and Images
 {: .section-title}
 
+<% code("markdown") do %> 
+  A [link](http://kramdown.gettalong.org) to the kramdown homepage.
+
+  ![Placeholder Image](http://placehold.it/300x50)
+
+<% end %>
+
 A [link](http://kramdown.gettalong.org) to the kramdown homepage.
 
-A [link](http://kramdown.gettalong.org "hp") to the homepage.
-
-A [link][kramdown hp] to the homepage.
-
-[kramdown hp]: http://kramdown.gettalong.org "hp"
-
-A [link][kramdown hp] to the homepage.
-
-[kramdown hp]: http://kramdown.gettalong.org "hp"
-
-An image:
-![Placeholder Image](http://placehold.it/400x300)
+![Placeholder Image](http://placehold.it/300x50)
 
 ---
 
 ## Inline Code
 {: .section-title}
+
+<% code("markdown") do %> 
+  Use `Kramdown::Document.new(text).to_html`
+  to convert the `text` in kramdown
+  syntax to HTML.
+
+  Use backticks to markup code,
+  e.g. `` `code` ``.
+
+<% end %>
 
 Use `Kramdown::Document.new(text).to_html`
 to convert the `text` in kramdown
@@ -210,34 +272,34 @@ e.g. `` `code` ``.
 
 ---
 
+## Inline Attributes
+{: .section-title}
+
+<% code("markdown") do %> 
+  This is *red*{: style="color: red"}.
+
+<% end %>
+
+This is *red*{: style="color: red"}.
+
+---
+
 ## Footnotes
 {: .section-title}
+
+
+<% code("markdown") do %> 
+  This is a text with a footnote[^1].
+
+  [^1]: And here is the definition.
+
+<% end %>
 
 This is a text with a
 footnote[^1].
 
 [^1]: And here is the definition.
 
-This is a text with a
-footnote[^2].
-
-[^2]:
-		And here is the definition.
-
----
-
-## Abbreviations
-{: .section-title}
-
-This is an HTML
-example.
-
-*[HTML]: Hyper Text Markup Language
-
-## Inline Attributes
-{: .section-title}
-
-This is *red*{: style="color: red"}.
 
 </div>
 

@@ -64,3 +64,15 @@ Mixins from [Josh Fry's Broilerplate](https://github.com/joshfry/assemble-bp)
 | triangle          |   |
 
 
+# TODO
+
+Look Broilerplate lists.scss
+
+* .ul-reset removes list styles and default is with bullets
+* Unless <nav> is the parent of a <ul>; Then list styles are removed
+
+A few other useful list classes
+
+* .list-of-links makes anchors inside list items more clickable
+* And .list-of-links-horiz is self explanatory
+

@@ -87,8 +87,8 @@ ul {
 
 .mobile-menu {
 	position: absolute;
-	top: .6em;
-	right: 1em;
+	top: 1.1em;
+	right: 1.1em;
 	z-index: 2;
 
 	@include media($medium-screen) {
@@ -116,3 +116,5 @@ ul {
 		}
 	}
 }
+
+<%= Rouge::Themes::Base16::Monokai.render(:scope => '.highlight') %>
