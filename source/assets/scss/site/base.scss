@@ -15,54 +15,65 @@
 .site-main{}
 .site-footer{}
 
+.table-of-contents {
+	@include clearfix;
+
+	ul li {
+		float:left;
+		width:30%;
+	}
+}
+
 // ------------------------------------------------------------
 // Site Nav
 // ------------------------------------------------------------
 
 .site-nav {
-  @include clearfix;
+	@include clearfix;
 
-  .navbar-brand {
-    display: block;
+	.navbar-brand {
+		display: block;
 
-    @include media($medium-screen) {
-      margin-right: $unit;
-      float: left;
-    }
-  }
+		i {
+			font-size:3em;
+			margin-right:1em;
+			display: block;
+		}
+		@include media($medium-screen) {
+			float: left;
+		}
+	}
 
-  .site-logo {
-    display: block;
-    border-radius: 100%;
-    margin: auto;
-  }
+	.site-logo {
+		display: block;
+		border-radius: 100%;
+		margin: auto;
+	}
 
-  .nav-links {
-    height: 0;
-    overflow: hidden;
+	.nav-links {
+		height: 0;
+		overflow: hidden;
 
-    @include media($medium-screen) {
-      height: auto;
-      overflow: auto;
-    }
+		@include media($medium-screen) {
+			height: auto;
+		}
 
-    a {
-      @include media($medium-screen) {
-        display: block;
-        float: left;
-        line-height: 0;
-        height: 0;
-        padding: 10px $unit;
-      }
-    }
+		a {
+			@include media($medium-screen) {
+				display: block;
+				float: left;
+				line-height: 0;
+				height: 0;
+				padding: .6em 1.5em;
+			}
+		}
 
-    .nav-right {
-      @include media($medium-screen) {
-        float: right;
-        padding-right: 0;
-      }
-    }
-  }
+		.nav-right {
+			@include media($medium-screen) {
+				float: right;
+			}
+		}
+	}
 }
 
 // ------------------------------------------------------------
@@ -70,43 +81,33 @@
 // ------------------------------------------------------------
 
 .mobile-menu {
-  //@include button-reset;
-  position: absolute;
-  top: $unit*1.5;
-  right: $unit;
-  z-index: 2;
-  text-align: center;
-  color: $primary;
+	position: absolute;
+	top: .6em;
+	right: 1em;
+	z-index: 2;
 
-  @include media($medium-screen) {
-    display: none;
-  }
+	@include media($medium-screen) {
+		display: none;
+	}
 
-  .icon {
-    display: block;
-    font-size: 2em;
-    line-height: 0;
-    padding: $unit $unit/2;
-    color: inherit;
-    cursor: pointer;
-  }
+	.icon {
+		display: block;
+		font-size: 2em;
+		cursor: pointer;
+	}
 }
 
 // Menu active
 .menu-active {
-  .mobile-menu {
-    color: $tertiary;
-  }
 
-  .nav-links {
-    height: auto;
-    overflow: auto;
-    padding: $unit 0 0;
+	.nav-links {
+		height: auto;
+		overflow: auto;
 
-    a {
-      display: block;
-      padding: $unit/2;
-      text-align: center;
-    }
-  }
+		a {
+			display: block;
+			padding: .5em;
+			text-align:center;
+		}
+	}
 }

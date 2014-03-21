@@ -28,7 +28,7 @@ Wired up through sprockets & sass
 
 | Heading           | Heading                                      |
 | ----------------- | -------------------------------------------- |
-| jquery            |                                              |
+| jquery            | The Write Less, Do More, JavaScript Library. |
 | bourbon           | A Sass Mixin Library                         |
 | neat              | Grid framework for Sass and Bourbon          |
 | magnific-popup    | responsive lightbox, customizable & fast     |

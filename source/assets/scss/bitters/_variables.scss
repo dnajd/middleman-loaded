@@ -43,8 +43,9 @@ $error-color: $light-red;
 $notice-color: $light-yellow;
 $success-color: $light-green;
 
-// Broiler Plate Variables
+// Middleman-Loaded Vars
 ///////////////////////////////////////////////////////////////////////////////
-$unit: $base_font_size - .5;
+
 $primary: $blue;
-$tertiary: $dark-gray;
+$secondary: darken($primary, 15);
+$tertiary: darken($primary, 35);
