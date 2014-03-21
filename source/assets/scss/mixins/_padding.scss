@@ -1,0 +1,35 @@
+// -------------------------------------------------------------------
+// Padding
+// -------------------------------------------------------------------
+
+@mixin padded-top-light    { padding-top: $base_line_height; }
+@mixin padded-bottom-light { padding-bottom: $base_line_height; }
+@mixin padded-top          { padding-top: $base_line_height*2; }
+@mixin padded-bottom       { padding-bottom: $base_line_height*2; }
+
+@mixin padded-light {
+  @include padded-top-light;
+  @include padded-bottom-light;
+}
+
+@mixin padded {
+  @include padded-light;
+  @include media(30em) {
+    @include padded-top;
+    @include padded-bottom;
+  }
+}
+
+// -------------------------------------------------------------------
+// Mixin classes
+//
+// For use within HTML
+// -------------------------------------------------------------------
+
+.padded-top-light    { @include padded-top-light; }
+.padded-bottom-light { @include padded-bottom-light; }
+.padded-top          { @include padded-top; }
+.padded-bottom       { @include padded-bottom; }
+
+.padded              { @include padded; }
+.padded-light        { @include padded-light; }

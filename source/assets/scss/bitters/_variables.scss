@@ -14,7 +14,7 @@ $base-border-radius: em(3);
 
 // Colors
 ///////////////////////////////////////////////////////////////////////////////
-
+$white: #fff;
 $white-smoke: #eee;
 $blue: #477DCA;
 $dark-gray: #333;
@@ -43,9 +43,11 @@ $error-color: $light-red;
 $notice-color: $light-yellow;
 $success-color: $light-green;
 
-// Middleman-Loaded Vars
+// Broilerplate Vars - used for /mixins
 ///////////////////////////////////////////////////////////////////////////////
 
+$one-pixel: 0.0625em; // Used for setting max-width mq's
+$unit: $base-font-size;
 $primary: $blue;
 $secondary: darken($primary, 15);
 $tertiary: darken($primary, 35);

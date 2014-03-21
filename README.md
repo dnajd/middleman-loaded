@@ -28,14 +28,14 @@ Wired up through sprockets & sass
 
 | Heading           | Heading                                      |
 | ----------------- | -------------------------------------------- |
-| jquery            | The Write Less, Do More, JavaScript Library. |
+| jquery            | The Write Less, Do More, JavaScript Library  |
 | bourbon           | A Sass Mixin Library                         |
 | neat              | Grid framework for Sass and Bourbon          |
-| magnific-popup    | responsive lightbox, customizable & fast     |
-| royalslider       | lightweight, responsive, themes              |
-| jquery-waypoints  | scroll position links                        |
-| fastclick         | remove 300ms mobile delay                    |
-| fitvids           | responsive videos                            |
+| magnific-popup    | Lightbox: responsive, customizable & fast    |
+| royalslider       | Slideshow: responsive, customizable & fast   |
+| jquery-waypoints  | Scroll position links                        |
+| fastclick         | Remove 300ms mobile delay                    |
+| fitvids           | Responsive videos                            |
 | mfglabs-iconset   | Awesome web font icon                        |
 
 

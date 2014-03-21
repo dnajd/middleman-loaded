@@ -10,6 +10,18 @@
 // iconset
 @import "../vendor/mfglabs-iconset/mfglabs_iconset";
 
+// Mixins
+@import "mixins/padding";
+@import "mixins/containers";
+@import "mixins/module";
+@import "mixins/hide-text";
+@import "mixins/omega-reset";
+@import "mixins/list-of-links";
+@import "mixins/trailing-hovers";
+@import "mixins/rounded-corners";
+@import "mixins/buttons";
+@import "mixins/triangle";
+
 // site
 @import "normalize";
-@import "site/base";
+@import "site/demo";

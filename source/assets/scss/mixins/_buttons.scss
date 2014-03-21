@@ -1,0 +1,106 @@
+// -------------------------------------------------------------------
+// Buttons
+// -------------------------------------------------------------------
+
+$base-button-font-size: $base-font-size;
+$base-button-large-font-size: $base-font-size * 1.375;
+
+$base-button-line-height: 2.5;
+
+$button-disabled-opacity: .5;
+
+// -------------------------------------------------------------------
+
+// Remove button defaults
+@mixin button-reset {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+// Add complimentary text next to a button
+@mixin unbutton {
+  position: relative;
+  display: inline-block;
+
+}
+
+@mixin button($button-background-color: $primary, $button-text-color: $white, $button-hover-background-color: darken($primary,15%), $button-hover-text-color: $white) {
+  @include trailing-hovers;
+  @include button-reset;
+  @include rounded-corners;
+
+  margin: 0 0 $base_line_height;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+
+  width: 100%;
+  padding: 0 $unit;
+
+  @include media(30em) {
+    width: auto;
+    margin: 0 $base_line_height/2 $base_line_height 0;
+  }
+
+  font-size: $base-button-font-size;
+  line-height: $base-button-line-height;
+  text-align: center;
+
+  cursor: pointer;
+
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+
+  border: none;
+  background-color: $button-background-color;
+  color: $button-text-color;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover, &.hover,
+  &:active, &.is-active {
+    color: $button-hover-text-color;
+    background-color: $button-hover-background-color;
+  }
+
+  &:disabled,
+  &.is-disabled {
+    opacity: $button-disabled-opacity;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &.large,
+  &.lrg {
+    font-size: $base-button-large-font-size;
+  }
+
+  &.alt {
+    color: $button-background-color;
+    background: none;
+    border: 2px solid $button-background-color;
+
+    &:hover,
+    &:active,
+    &.is-active {
+      // color: $button-hover-text-color;
+      // background: $button-background-color;
+      border-color: $button-hover-background-color;
+      color: $button-hover-background-color;
+    }
+  }
+}
+
+.button,
+.btn {
+  @include button;
+}
