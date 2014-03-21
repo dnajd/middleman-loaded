@@ -26,7 +26,7 @@ middleman
 
 Wired up through sprockets & sass
 
-| Heading           | Heading                                      |
+| Package           | Description                                  |
 | ----------------- | -------------------------------------------- |
 | jquery            | The Write Less, Do More, JavaScript Library  |
 | bourbon           | A Sass Mixin Library                         |
@@ -38,6 +38,23 @@ Wired up through sprockets & sass
 | fitvids           | Responsive videos                            |
 | mfglabs-iconset   | Awesome web font icon                        |
 
+
+## SASS Mixins
+
+Mixins from [Josh Fry's Broilerplate](https://github.com/joshfry/assemble-bp)
+
+| Package           | Description                                  |
+| ----------------- | -------------------------------------------- |
+| buttons           |   |
+| containers        |   |
+| hide-text         |   |
+| list-of-links     |   |
+| module            |   |
+| omega-reset       |   |
+| padding           |   |
+| rounded-corners   |   |
+| trailing-hovers   |   |
+| triangle          |   |
 
 ## Configuration
 
