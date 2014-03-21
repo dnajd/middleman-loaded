@@ -22,6 +22,13 @@ middleman
 
 # What's it Loaded With?
 
+## Middleman Configuration
+
+* Gems for middle-man console, live reload and handling for fav icons
+* Configured for markdown nested in html (.html.md.erb files)
+* Better organization of /assets
+* Sample pages with markdown & bourbon bitters styles
+
 ## CSS & JS Libraries
 
 Wired up through sprockets & sass
@@ -56,10 +63,4 @@ Mixins from [Josh Fry's Broilerplate](https://github.com/joshfry/assemble-bp)
 | trailing-hovers   |   |
 | triangle          |   |
 
-## Configuration
-
-* Gems for middle-man console, live reload and handling for fav icons
-* Configured for markdown nested in html (.html.md.erb files)
-* Better organization of /assets
-* Sample pages with markdown & bourbon bitters styles
 
