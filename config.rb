@@ -33,7 +33,7 @@ set :layouts_dir,  '_templates/layouts'
 # set :helpers_dir
 
 # Markdown settings
-set :markdown, parse_block_html: true
+set :markdown
 
 # Bower support for Sprockets
 after_configuration do

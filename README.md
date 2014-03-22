@@ -25,8 +25,7 @@ middleman
 ## Middleman Configuration
 
 * Gems for middle-man console, live reload and handling for fav icons
-* Configured for markdown nested in html (.html.md.erb files)
-* Better organization of /assets
+* Organized /assets
 * Sample pages with markdown & bourbon bitters styles
 
 ## CSS & JS Libraries
@@ -66,13 +65,9 @@ Mixins from [Josh Fry's Broilerplate](https://github.com/joshfry/assemble-bp)
 
 # TODO
 
-Look Broilerplate lists.scss
-
-* .ul-reset removes list styles and default is with bullets
-* Unless <nav> is the parent of a <ul>; Then list styles are removed
-
 A few other useful list classes
 
 * .list-of-links makes anchors inside list items more clickable
 * And .list-of-links-horiz is self explanatory
 
+* Bring back bower and make it optional

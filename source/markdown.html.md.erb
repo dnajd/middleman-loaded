@@ -2,14 +2,10 @@
 title: markdown
 ---
 
-<div class="container padded module">
-
-# Markdown!
+# Markdown Style Guide
 {: .page-title}
 
 <nav id="toc"></nav>
-
----
 
 <!-- This entire page is authored with markdown.
 {: .notice} -->
@@ -24,7 +20,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 Here's a paragraph with a linebreak,
 just add 2 spaces at the end of the line.
 
----
+
 
 ## Headers
 {: .section-title}
@@ -52,7 +48,7 @@ just add 2 spaces at the end of the line.
 
 ###### H6 header
 
----
+
 
 ## Code Blocks
 {: .section-title}
@@ -100,7 +96,7 @@ console.log("hi");
 $ grunt dev
 ~~~
 
----
+
 
 ## Tables
 {: .section-title }
@@ -147,17 +143,43 @@ $ grunt dev
 {: .section-title }
 
 <% code("markdown") do %> 
-  - Item one
-  - Item two
-  - Item three
+  * Item one
+  * Item two
+  * Item three
 
 <% end %>
 
-- Item one
-- Item two
-- Item three
+* Item one
+* Item two
+* Item three
 
----
+<% code("markdown") do %> 
+  * Item one
+  * Item two
+  * Item three
+  {: .default-ul }
+
+<% end %>
+
+* Item one
+* Item two
+* Item three
+{: .default-ul }
+
+<% code("markdown") do %> 
+  1. Item one
+  2. Item two
+  3. Item three
+  {: .default-ol }
+
+<% end %>
+
+1. Item one
+2. Item two
+3. Item three
+{: .default-ol }
+
+
 
 ## Blockquotes
 {: .section-title}
@@ -202,7 +224,7 @@ term
 : definition
 : another definition
 
----
+
 
 ## Block Attributes
 {: .section-title}
@@ -232,7 +254,7 @@ __this__ too!
 
 This w**ork**s as expected!
 
----
+
 
 ## Links and Images
 {: .section-title}
@@ -248,7 +270,7 @@ A [link](http://kramdown.gettalong.org) to the kramdown homepage.
 
 ![Placeholder Image](http://placehold.it/300x50)
 
----
+
 
 ## Inline Code
 {: .section-title}
@@ -270,7 +292,7 @@ syntax to HTML.
 Use backticks to markup code,
 e.g. `` `code` ``.
 
----
+
 
 ## Inline Attributes
 {: .section-title}
@@ -282,7 +304,7 @@ e.g. `` `code` ``.
 
 This is *red*{: style="color: red"}.
 
----
+
 
 ## Footnotes
 {: .section-title}
@@ -300,8 +322,6 @@ footnote[^1].
 
 [^1]: And here is the definition.
 
-
-</div>
 
 <% content_for :css do %>
 <style>

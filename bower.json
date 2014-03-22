@@ -1,0 +1,16 @@
+{
+   "name": "boilerplate",
+   "description": "Frontend tool packages that you'l almost always want",
+   "version": "0.0.1",
+   "dependencies": {
+     "jquery": "2.1.0",
+     "bourbon": "https://github.com/thoughtbot/bourbon.git#3.1.8",
+     "neat": "https://github.com/thoughtbot/neat.git#1.4.0",
+     "magnificpopup": "https://github.com/dimsemenov/MagnificPopup.git#~0.9.9",
+     "royalslider": "ssh://git@scm.discdrive.bayphoto.com:7999/wt/royalslider.git",
+     "jquerywaypoints": "https://github.com/imakewebthings/jquerywaypoints.git#~2.0.4",
+     "fastclick": "https://github.com/ftlabs/fastclick.git#~0.6.11",
+     "responsiveimages.js": "https://github.com/kvendrik/responsiveimages.js.git",
+     "fitvids": "~1.0.3"
+   }
+ }
