@@ -63,6 +63,10 @@ Mixins from [Josh Fry's Broilerplate](https://github.com/joshfry/assemble-bp)
 | triangle          |   |
 
 
+## Bower
+
+Bower is not needed as all vendor packages are in /source/assets/vendor.  We have left the .bowerrc and bower.json as documentation of what packages & versions were included in middleman-loaded. You can use bower if you wish to pull packages into /vendor/bower and upgrade.
+
 # TODO
 
 A few other useful list classes
