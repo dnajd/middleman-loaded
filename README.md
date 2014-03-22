@@ -24,13 +24,11 @@ middleman
 
 ## Middleman Configuration
 
-* Gems for middle-man console, live reload and handling for fav icons
-* Organized /assets
-* Sample pages with markdown & bourbon bitters styles
+* Gems: middle-man console, live reload & fav icons generator
+* Organized js, css and vendor code in /assets
+* Style Guide pages for learning markdown & bourbon bitters
 
 ## CSS & JS Libraries
-
-Wired up through sprockets & sass
 
 | Package           | Description                                  |
 | ----------------- | -------------------------------------------- |
