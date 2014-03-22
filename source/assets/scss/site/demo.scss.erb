@@ -2,14 +2,10 @@
 // ------------------------------------------------------------
 // Demo styles
 // ------------------------------------------------------------
-.container{
-	max-width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 20px;
-}
 .site-header {
+	@include clearfix;
 	background-color: $white-smoke;
+	padding:1em;
 }
 .site-main{}
 .site-footer{}
@@ -26,8 +22,6 @@
 	@include span-columns(12);
 	@include media($medium-screen) {
 		@include span-columns(4);
-
-		
 	}
 }
 
