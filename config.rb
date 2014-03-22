@@ -37,7 +37,7 @@ set :markdown
 
 # Bower support for Sprockets
 after_configuration do
-  sprockets.append_path File.join "#{root}", 'source/assets/vendor'
+  sprockets.append_path File.join "#{root}", 'source/assets/_vendor'
 end
 
 # Custom helpers
