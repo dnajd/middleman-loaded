@@ -1,3 +1,4 @@
+require 'middleman-gh-pages'
 
 # warning: this will overwrite changes to bitters
 task :refresh_bitters do
