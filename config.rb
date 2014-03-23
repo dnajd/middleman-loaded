@@ -32,6 +32,10 @@ set :layouts_dir,  '_templates/layouts'
 # set :fonts_dir
 # set :helpers_dir
 
+# gh-pages relative path
+activate :relative_assets
+set :relative_links, true
+
 # Markdown settings
 set :markdown
 
