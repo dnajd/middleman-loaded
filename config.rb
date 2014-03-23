@@ -34,7 +34,7 @@ set :layouts_dir,  '_templates/layouts'
 
 # gh-pages relative path
 activate :relative_assets
-set :relative_links, true
+#set :relative_links, true
 
 # Markdown settings
 set :markdown

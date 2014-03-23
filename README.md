@@ -8,17 +8,26 @@ Middleman loaded with good stuff and configured to kill
 
 ## Get Started
 
-Install Gems
+### Install Gems
 
 ```
 bundle install --path=vendor
 ```
 
-Run Middleman
+### Run Middleman Locally
 
 ```
-middleman
+bundle exec middleman
 ```
+
+### Deploy to Github Project Pages
+
+This will create a gh-pages branch and build your project into it.  Your site will show up at http://user.github.io/projectname
+
+```
+bundle exec rake publish
+```
+
 
 # What's it Loaded With?
 
@@ -27,6 +36,7 @@ middleman
 * Gems: middle-man console, live reload & fav icons generator
 * Organized js, css and vendor code in /assets
 * Style Guide pages for learning markdown & bourbon bitters
+* Automated publishing to Github Project Pages & adjusted for relative paths
 
 ## CSS & JS Libraries
 
@@ -59,7 +69,6 @@ Mixins from [Josh Fry's Broilerplate](https://github.com/joshfry/assemble-bp)
 | rounded-corners   |   |
 | trailing-hovers   |   |
 | triangle          |   |
-
 
 ## Bower
 
