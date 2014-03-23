@@ -66,7 +66,13 @@ task :deploy_gh_pages do
 	sh 'bundle exec middleman build'
 
 	# remove everything
-	sh 'cd ' + deploy_dir + ' && git rm -rf .'  unless Dir[File.join(deploy_dir, '/*')].empty?
+	if Dir[File.join(deploy_dir, '/*')].empty?
+		sh 'cd ' + deploy_dir + ' && git rm -rf .'
+
+		# commit
+		sh 'cd ' + deploy_dir + ' && git add . && git commit -am "clean up"'
+
+	end
 
 	# copy build into _deploy
 	sh 'cd build && cp -R * ../' + deploy_dir
