@@ -67,6 +67,8 @@ GEM
     middleman-favicon-maker (3.5.3)
       favicon_maker (~> 1.1.2)
       middleman-core (>= 3.0.0)
+    middleman-gh-pages (0.0.3)
+      rake (> 0.9.3)
     middleman-livereload (3.1.1)
       em-websocket (>= 0.2.0)
       middleman-core (>= 3.0.2)
@@ -128,6 +130,7 @@ DEPENDENCIES
   bitters
   middleman (~> 3.2.2)
   middleman-favicon-maker (~> 3.5)
+  middleman-gh-pages
   middleman-livereload (~> 3.1.0)
   middleman-pry
   middleman-syntax

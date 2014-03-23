@@ -6,4 +6,5 @@ task :refresh_bitters do
   bitters_dest = File.join(current_dir, '/source/assets/scss')
 
   sh 'cd ' + bitters_dest + ' && bundle exec bitters install '
+
 end
