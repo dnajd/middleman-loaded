@@ -54,7 +54,7 @@ task :checkout_gh_pages do
 	sh 'cd ' + deploy_dir + ' && git reset --hard HEAD'
 
 	# create gh-pages, add & commit
-	sh 'cd ' + deploy_dir + ' && git checkout -b gh-pages origin/gh-pages'
+	sh 'cd ' + deploy_dir + ' && git checkout -b gh-pages origin/gh-pages && git pull'
 
 end
 
