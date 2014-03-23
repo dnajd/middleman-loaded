@@ -26,13 +26,13 @@ task :init_gh_pages do
 	# reset
 	sh 'cd ' + deploy_dir + ' && git reset --hard HEAD && git clean -f -d'
 
- 	# create gh-pages, add & commit
- 	sh 'cd ' + deploy_dir + ' && git checkout --orphan gh-pages && git add . && git commit -am "first commit"'
+	# create gh-pages, add & commit
+	sh 'cd ' + deploy_dir + ' && git checkout --orphan gh-pages && git add . && git commit -am "first commit"'
 
- 	# remove everything
- 	sh 'cd ' + deploy_dir + ' && git rm -rf . && git add . && git commit -am "clean house"'
+	# remove everything
+	sh 'cd ' + deploy_dir + ' && git rm -rf . && git add . && git commit -am "clean house"'
 
- 	# remove everything
- 	sh 'cd ' + deploy_dir + ' && git push origin gh-pages'
-	
+	# push
+	sh 'cd ' + deploy_dir + ' && git push origin gh-pages'
+
 end
