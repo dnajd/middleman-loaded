@@ -9,13 +9,16 @@ task :refresh_bitters do
 end
 
 
+###########################
+# gh-pages
+
+deploy_dir = '_deploy'
+
 desc "Init gh-pages & deployment strategy"
 task :init_gh_pages do
 
 	#https://help.github.com/articles/creating-project-pages-manually
 	#git checkout --orphan gh-pages
-
-	deploy_dir = '_deploy'
 
 	# make directory
 	Dir.mkdir(deploy_dir) unless Dir.exists?(deploy_dir)
@@ -34,5 +37,23 @@ task :init_gh_pages do
 
 	# push
 	sh 'cd ' + deploy_dir + ' && git push origin gh-pages'
+
+end
+
+
+desc "Deploy gh-pages"
+task :deploy_gh_pages do
+
+	# build middleman
+	sh 'bundle exec middleman build'
+
+	# remove everything
+	sh 'cd ' + deploy_dir + ' && git rm -rf . && git add . && git commit -am "clean house"'
+
+	# copy build into _deploy
+	sh 'cd build && cp -R * ' + deploy_dir
+
+	# deploy
+	sh 'cd ' + deploy_dir + ' && git add . && git commit -am "new build"'
 
 end
