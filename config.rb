@@ -45,6 +45,9 @@ after_configuration do
   sprockets.append_path File.join "#{root}", 'source/assets/_vendor'
 end
 
+# Ignore files/paths
+ignore '.idea/*'
+
 # Custom helpers
 # Methods defined in the helpers block are available in templates
 helpers do
