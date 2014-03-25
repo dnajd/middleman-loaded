@@ -26,11 +26,12 @@ activate :syntax # code highlighting
 set :css_dir, 'assets/scss'
 set :js_dir, 'assets/js'
 set :images_dir, 'assets/img'
-set :data_dir, 'source/_templates/data'
-set :partials_dir, '_templates/partials'
-set :layouts_dir,  '_templates/layouts'
-# set :fonts_dir
-# set :helpers_dir
+set :fonts_dir, 'assets/fonts'
+
+set :data_dir, 'source/data'
+#set :partials_dir, '_partials'
+set :layouts_dir,  '_layouts'
+set :helpers_dir, 'helpers'
 
 # gh-pages relative path
 activate :relative_assets
@@ -68,6 +69,7 @@ configure :build do
 
   # Favicon generator
   # https://github.com/follmann/middleman-favicon-maker
+=begin
   activate :favicon_maker do |f|
     f.template_dir  = File.join(root, 'source/assets/img')
     f.output_dir    = File.join(root, 'build')
@@ -77,7 +79,7 @@ configure :build do
       ]
     }
   end
-
+=end
   # Alt image path
   # set :http_prefix, "/Content/images/"
 end
