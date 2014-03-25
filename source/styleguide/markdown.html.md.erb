@@ -2,6 +2,10 @@
 title: Markdown Style Guide
 ---
 
+
+<%= partial '/styleguide/subnav' %>
+
+
 # Markdown Style Guide
 {: .page-title}
 
@@ -27,14 +31,12 @@ just add 2 spaces at the end of the line.
 
 
 <% code("markdown") do %>
-
-	# H1 header
-	## H2 header
-	### H3 header
-	#### H4 header
-	##### H5 header
-	###### H6 header
-
+# H1 header
+## H2 header
+### H3 header
+#### H4 header
+##### H5 header
+###### H6 header
 <% end %>
 
 # H1 header
@@ -56,11 +58,9 @@ just add 2 spaces at the end of the line.
 
 
 <% code("markdown") do %>
-
-	~~~ language
-	code here
-	~~~
-
+~~~ language
+code here
+~~~
 <% end %>
 
 #### Ruby
@@ -104,19 +104,17 @@ $ grunt dev
 {: .section-title }
 
 <% code("markdown") do %>
-
-	|-----------------+-----------------+-----------------|
-	| Heading         | Heading         | Heading         |
-	|-----------------|-----------------|-----------------|
-	| Price of thing  | Price of thing  | Price of thing  |
-	| Price of thing  | Price of thing  | Price of thing  |
-	| Price of thing  | Price of thing  | Price of thing  |
-	| Price of thing  | Price of thing  | Price of thing  |
-	| Price of thing  | Price of thing  | Price of thing  |
-	|-----------------|-----------------|-----------------|
-	|=====
-	| Foot1   | Foot2   | Foot3
-
+|-----------------+-----------------+-----------------|
+| Heading         | Heading         | Heading         |
+|-----------------|-----------------|-----------------|
+| Price of thing  | Price of thing  | Price of thing  |
+| Price of thing  | Price of thing  | Price of thing  |
+| Price of thing  | Price of thing  | Price of thing  |
+| Price of thing  | Price of thing  | Price of thing  |
+| Price of thing  | Price of thing  | Price of thing  |
+|-----------------|-----------------|-----------------|
+|=====
+| Foot1   | Foot2   | Foot3
 <% end %>
 
 |-----------------+-----------------+-----------------|
@@ -136,9 +134,7 @@ $ grunt dev
 
 
 <% code("markdown") do %>
-
-	---
-
+---
 <% end %>
 
 ---
@@ -147,11 +143,9 @@ $ grunt dev
 {: .section-title }
 
 <% code("markdown") do %>
-
-	* Item one
-	* Item two
-	* Item three
-
+* Item one
+* Item two
+* Item three
 <% end %>
 
 * Item one
@@ -159,12 +153,10 @@ $ grunt dev
 * Item three
 
 <% code("markdown") do %>
-
-	* Item one
-	* Item two
-	* Item three
-	{: .default-ul }
-
+* Item one
+* Item two
+* Item three
+{: .default-ul }
 <% end %>
 
 * Item one
@@ -173,12 +165,10 @@ $ grunt dev
 {: .default-ul }
 
 <% code("markdown") do %>
-
-	1. Item one
-	2. Item two
-	3. Item three
-	{: .default-ol }
-
+1. Item one
+2. Item two
+3. Item three
+{: .default-ol }
 <% end %>
 
 1. Item one
@@ -187,17 +177,14 @@ $ grunt dev
 {: .default-ol }
 
 
-
 ## Blockquotes
 {: .section-title}
 
 <% code("markdown") do %>
-
-	> A sample blockquote.
-	>
-	> >Nested blockquotes are
-	> >also possible.
-
+> A sample blockquote.
+>
+> >Nested blockquotes are
+> >also possible.
 <% end %>
 
 > A sample blockquote.
@@ -210,17 +197,15 @@ $ grunt dev
 
 
 <% code("markdown") do %>
+term
+: definition
 
-	term
-	: definition
+term
+: definition
 
-	term
-	: definition
-
-	term
-	: definition
-	: another definition
-
+term
+: definition
+: another definition
 <% end %>
 
 term
@@ -239,18 +224,16 @@ term
 {: .section-title}
 
 <% code("markdown") do %>
+> Blockquote with a title
+{: title="Blockquote title"}
 
-	> Blockquote with a title
-	{: title="Blockquote title"}
+This is *emphasized*,
+_this_ too!
 
-	This is *emphasized*,
-	_this_ too!
+This is **strong**,
+__this__ too!
 
-	This is **strong**,
-	__this__ too!
-
-	This w**ork**s as expected!
-
+This w**ork**s as expected!
 <% end %>
 
 > Blockquote with a title
@@ -270,11 +253,9 @@ This w**ork**s as expected!
 {: .section-title}
 
 <% code("markdown") do %>
+A [link](http://kramdown.gettalong.org) to the kramdown homepage.
 
-	A [link](http://kramdown.gettalong.org) to the kramdown homepage.
-
-	![Placeholder Image](http://placehold.it/300x50)
-
+![Placeholder Image](http://placehold.it/300x50)
 <% end %>
 
 A [link](http://kramdown.gettalong.org) to the kramdown homepage.
@@ -287,14 +268,12 @@ A [link](http://kramdown.gettalong.org) to the kramdown homepage.
 {: .section-title}
 
 <% code("markdown") do %>
+Use `Kramdown::Document.new(text).to_html`
+to convert the `text` in kramdown
+syntax to HTML.
 
-	Use `Kramdown::Document.new(text).to_html`
-	to convert the `text` in kramdown
-	syntax to HTML.
-
-	Use backticks to markup code,
-	e.g. `` `code` ``.
-
+Use backticks to markup code,
+e.g. `` `code` ``.
 <% end %>
 
 Use `Kramdown::Document.new(text).to_html`
@@ -310,9 +289,7 @@ e.g. `` `code` ``.
 {: .section-title}
 
 <% code("markdown") do %>
-
-	This is *red*{: style="color: red"}.
-
+This is *red*{: style="color: red"}.
 <% end %>
 
 This is *red*{: style="color: red"}.
@@ -324,11 +301,9 @@ This is *red*{: style="color: red"}.
 
 
 <% code("markdown") do %>
+This is a text with a footnote[^1].
 
-	This is a text with a footnote[^1].
-
-	[^1]: And here is the definition.
-
+[^1]: And here is the definition.
 <% end %>
 
 This is a text with a
