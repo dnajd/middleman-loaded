@@ -10,6 +10,23 @@
 .site-main{}
 .site-footer{}
 
+
+// ------------------------------------------------------------
+// Demo Home Page
+// ------------------------------------------------------------
+
+.col {
+	@include span-columns(12);
+	@include media($medium-screen) {
+		@include span-columns(4);
+	}
+}
+
+
+// ------------------------------------------------------------
+// Style Guide
+// ------------------------------------------------------------
+
 .table-of-contents {
 	@include clearfix;
 
@@ -18,13 +35,6 @@
 		width:30%;
 	}
 }
-.col {
-	@include span-columns(12);
-	@include media($medium-screen) {
-		@include span-columns(4);
-	}
-}
-
 .sub-nav {
 	margin-top:20px;
 	a, a:hover { 
