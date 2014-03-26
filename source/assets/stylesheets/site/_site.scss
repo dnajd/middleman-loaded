@@ -1,6 +1,5 @@
-
 // ------------------------------------------------------------
-// Demo styles
+// Layout
 // ------------------------------------------------------------
 .site-header {
 	@include clearfix;
@@ -11,37 +10,6 @@
 .site-footer{}
 
 
-// ------------------------------------------------------------
-// Demo Home Page
-// ------------------------------------------------------------
-
-.col {
-	@include span-columns(12);
-	@include media($medium-screen) {
-		@include span-columns(4);
-	}
-}
-
-
-// ------------------------------------------------------------
-// Style Guide
-// ------------------------------------------------------------
-
-.table-of-contents {
-	@include clearfix;
-
-	ul li {
-		float:left;
-		width:30%;
-	}
-}
-.sub-nav {
-	margin-top:20px;
-	a, a:hover { 
-		@include button;
-		margin:0;
-	}
-}
 
 // ------------------------------------------------------------
 // Site Nav
@@ -131,5 +99,3 @@
 		}
 	}
 }
-
-<%= Rouge::Themes::Base16::Monokai.render(:scope => '.highlight') %>
