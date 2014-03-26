@@ -1,22 +1,9 @@
-# Page options, layouts, aliases and proxies
+# -------------------------------------------------------------------
+# EXTENSIONS
 # -------------------------------------------------------------------
 
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", :layout => false
-#
-# With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
-
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
-#  :which_fake_page => "Rendering a fake page with a local variable" }
+require 'lib/extensions/custom_urls.rb'
+activate :custom_urls
 
 activate :livereload
 activate :directory_indexes
@@ -31,7 +18,7 @@ set :fonts_dir, 'assets/fonts'
 set :data_dir, 'source/data'
 #set :partials_dir, '_partials'
 set :layouts_dir,  '_layouts'
-set :helpers_dir, 'helpers'
+set :helpers_dir, 'lib/helpers'
 
 # gh-pages relative path
 activate :relative_assets
@@ -40,24 +27,17 @@ activate :relative_assets
 # Markdown settings
 set :markdown
 
-# Bower support for Sprockets
+# -------------------------------------------------------------------
+# MISC
+# -------------------------------------------------------------------
+
+# _vendor support for Sprockets
 after_configuration do
   sprockets.append_path File.join "#{root}", 'source/assets/_vendor'
 end
 
 # Ignore files/paths
 ignore '.idea/*'
-
-# Custom helpers
-# Methods defined in the helpers block are available in templates
-helpers do
-
-  # Sample
-  # def some_helper
-  #   "Helping"
-  # end
-
-end # / helpers do
 
 # -------------------------------------------------------------------
 # Build-specific config
