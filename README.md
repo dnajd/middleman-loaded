@@ -34,7 +34,8 @@ bundle exec rake publish
 ## Middleman Configuration
 
 * Gems: middle-man console, live reload & fav icons generator
-* Organized js, css and vendor code in /assets
+* Organized assets and views using Rails Conventions
+* Extension for friendly urls
 * Style Guide pages for learning markdown & bourbon bitters
 * Automated publishing to Github Project Pages & adjusted for relative paths
 
@@ -80,5 +81,3 @@ A few other useful list classes
 
 * .list-of-links makes anchors inside list items more clickable
 * And .list-of-links-horiz is self explanatory
-
-* Bring back bower and make it optional
