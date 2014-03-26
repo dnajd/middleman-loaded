@@ -10,22 +10,22 @@ activate :directory_indexes
 activate :automatic_image_sizes
 activate :syntax # code highlighting
 
-set :css_dir, 'assets/scss'
-set :js_dir, 'assets/js'
-set :images_dir, 'assets/img'
-set :fonts_dir, 'assets/fonts'
+# markdown settings
+set :markdown
 
+# directories
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
+set :fonts_dir, 'assets/fonts'
 set :data_dir, 'source/data'
-#set :partials_dir, '_partials'
 set :layouts_dir,  '_layouts'
 set :helpers_dir, 'lib/helpers'
+#set :partials_dir, '_partials'
 
 # gh-pages relative path
-activate :relative_assets
+#activate :relative_assets
 #set :relative_links, true
-
-# Markdown settings
-set :markdown
 
 # -------------------------------------------------------------------
 # MISC
