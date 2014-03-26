@@ -2,9 +2,11 @@
 # EXTENSIONS
 # -------------------------------------------------------------------
 
+# custom
 require 'lib/extensions/custom_urls.rb'
 activate :custom_urls
 
+# gems
 activate :livereload
 activate :directory_indexes
 activate :automatic_image_sizes
