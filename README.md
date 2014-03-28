@@ -20,12 +20,18 @@ bundle install --path=vendor
 bundle exec middleman
 ```
 
-### Deploy to Github Project Pages
+### Deploy to Github User or Project Pages
 
-This will create a gh-pages branch and build your project into it.  Your site will show up at http://user.github.io/projectname
+Github User Pages
+
+* follow [these instructions](http://www.beesbot.com/middleman-github-user-pages/)
+
+Github Project Pages 
+
+* requires a minor edit to the config.rb and then run
 
 ```
-bundle exec rake publish
+bundle exec middleman deploy
 ```
 
 
@@ -37,7 +43,7 @@ bundle exec rake publish
 * Organized assets and views using Rails Conventions
 * Extension for friendly urls
 * Style Guide pages for learning markdown & bourbon bitters
-* Automated publishing to Github Project Pages & adjusted for relative paths
+* Configuration for publishing to Github User & Project Pages
 
 ## CSS & JS Libraries
 

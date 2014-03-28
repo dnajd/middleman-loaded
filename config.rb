@@ -12,13 +12,17 @@ activate :directory_indexes
 activate :automatic_image_sizes
 activate :syntax # code highlighting
 
-# github deploy
+# github userpages deploy
 #activate :deploy do |deploy|
-  # deploy.method = :git
-  # [Optional Settings]
-  # deploy.branch   = "custom-branch" # default: gh-pages;
-  # deploy.remote   = "custom-remote" # remote name or git url, default: origin
-  # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
+  #deploy.method = :git
+  #deploy.build_before = true
+  #deploy.branch   = "master"
+  #deploy.remote   = "git@github.com:username/username.github.io.git"
+#end
+
+# github project pages deploy
+#activate :deploy do |deploy|
+#  deploy.method = :git
 #end
 
 # markdown settings
