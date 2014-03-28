@@ -38,15 +38,9 @@ set :layouts_dir,  '_layouts'
 set :helpers_dir, 'lib/helpers'
 #set :partials_dir, '_partials'
 
-# gh-pages relative path
-#activate :relative_assets
-#set :relative_links, true
-
 # -------------------------------------------------------------------
 # MISC
 # -------------------------------------------------------------------
-
-
 
 # _vendor support for Sprockets
 after_configuration do
