@@ -12,6 +12,15 @@ activate :directory_indexes
 activate :automatic_image_sizes
 activate :syntax # code highlighting
 
+# github deploy
+#activate :deploy do |deploy|
+  # deploy.method = :git
+  # [Optional Settings]
+  # deploy.branch   = "custom-branch" # default: gh-pages;
+  # deploy.remote   = "custom-remote" # remote name or git url, default: origin
+  # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
+#end
+
 # markdown settings
 set :markdown
 
@@ -32,6 +41,8 @@ set :helpers_dir, 'lib/helpers'
 # -------------------------------------------------------------------
 # MISC
 # -------------------------------------------------------------------
+
+
 
 # _vendor support for Sprockets
 after_configuration do
