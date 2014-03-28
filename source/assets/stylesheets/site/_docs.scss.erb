@@ -13,7 +13,11 @@
 
 	ul li {
 		float:left;
-		width:30%;
+		width:100%;
+
+		@include media($medium-screen) {
+			width: 30%;
+		}
 	}
 }
 .sub-nav {
