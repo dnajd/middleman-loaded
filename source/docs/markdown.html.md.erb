@@ -312,20 +312,6 @@ footnote[^1].
 [^1]: And here is the definition.
 
 
-<% content_for :css do %>
-<style>
-	.table-of-contents:before, .table-of-contents:after { content: " "; display: table; }
-	.table-of-contents:after { clear: both; }
-	.table-of-contents { margin-bottom: 20px; padding: 1.5em 1.5em 1em; border: 8px solid #eee; }
-	.table-of-contents h2 { margin: 0 0 .75em; }
-	.table-of-contents li { float: left; width: 50%; }
-		@media (min-width: 35em) { .table-of-contents li {width: 33.333%; }}
-		@media (min-width: 45em) { .table-of-contents li {width: 25%; }}
-		@media (min-width: 75em) { .table-of-contents li {width: 20%; }}
-	.table-of-contents li a { display: block; margin: 0 1em .5em 0; }
-</style>
-<% end %>
-
 <% content_for :js do %>
 <script>
 tableOfContents();
