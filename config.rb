@@ -23,6 +23,7 @@ activate :syntax # code highlighting
 # github project pages deploy
 #activate :deploy do |deploy|
 #  deploy.method = :git
+#  deploy.build_before = true # default: false
 #end
 
 # markdown settings
