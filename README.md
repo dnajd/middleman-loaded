@@ -87,3 +87,5 @@ A few other useful list classes
 
 * .list-of-links makes anchors inside list items more clickable
 * And .list-of-links-horiz is self explanatory
+* switch out mfglabs-iconset with [fontawesome](https://github.com/cristianferrarig/font-awesome-middleman
+1 min) and update docs
