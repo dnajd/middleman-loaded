@@ -1,16 +1,24 @@
 // -------------------------------------------------------------------
-// Import all the things
+// Vendor
 // -------------------------------------------------------------------
 
-@import "normalize";
+// Bower components
+//= require magnific-popup-0.9.9/magnific-popup.css
+//= require royalslider/royalslider.css
+//= require royalslider/rs-default-inverted.css
+//= require ../_vendor/normalize/_normalize
 
-// Bourbon, Bitters & Bourbon Neat
+// Bourbon, Bourbon Neat & Bitters
 @import "../_vendor/bourbon-3.1.8/_bourbon";
-@import "bitters/bitters";                 // not vendor, meant to be overriden
+@import "bitters/bitters"; // not vendor, meant to be overriden
 @import "../_vendor/neat-1.4.0/_neat";
 
-// iconset
-@import "../_vendor/mfglabs-iconset/mfglabs_iconset";
+// Font Awesome
+@import "font-awesome";
+
+// -------------------------------------------------------------------
+// Site
+// -------------------------------------------------------------------
 
 // Mixins
 @import "mixins/padding";

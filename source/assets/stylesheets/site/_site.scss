@@ -1,15 +1,40 @@
 // ------------------------------------------------------------
 // Layout
 // ------------------------------------------------------------
-.site-header {
-	@include clearfix;
-	background-color: $white-smoke;
-	padding:1em;
+
+// A simple, reusable mixin for applying
+// to the top and bottom of an element.
+@mixin section_padding($padding: 1em) {
+  padding: $padding 0;
 }
-.site-main{}
-.site-footer{}
 
+.site-header {
+  position: relative;
+	@include clearfix;
+	background-color: #EFE8D5;
+}
 
+.site-main {
+  @include section_padding(2em);
+
+  @include media($medium-screen) {
+    @include section_padding(5em);
+  }
+}
+
+.site-footer {
+  @include section_padding(1em);
+  border-top: 1px solid #eee;
+}
+
+// ------------------------------------------------------------
+// Typography
+// ------------------------------------------------------------
+
+h1, h2, h3,
+h4, h5, h6 {
+  line-height: 1; // Set line-height smaller on larger fonts
+}
 
 // ------------------------------------------------------------
 // Site Nav
@@ -20,15 +45,21 @@
 
 	.navbar-brand {
 		display: block;
+    line-height: 0;
+    padding: 2em 0;
+    float: left;
+    line-height: 0;
 
-		i {
-			font-size:3em;
-			margin-right:1em;
-			display: block;
+    @include media($medium-screen) {
+      padding: 2em;
 		}
-		@include media($medium-screen) {
-			float: left;
-		}
+
+    i {
+      font-size: 3em;
+      line-height: 0;
+      display: block;
+      color: #002B36;
+    }
 	}
 
 	.site-logo {
@@ -51,8 +82,18 @@
 				display: block;
 				float: left;
 				line-height: 0;
-				height: 0;
-				padding: .6em 1.5em;
+        font-weight: bold;
+        color: #444;
+
+        // I removed the top and bottom padding of the header
+        // and fattened up the touch targets on these links.
+        // Now they're easier to click.
+				padding: 1.5em;
+
+        &:hover {
+          background: #002B36;
+          color: #EFE8D5;
+        }
 			}
 		}
 
@@ -70,13 +111,20 @@
 
 .mobile-menu {
 	position: absolute;
-	top: 1.1em;
-	right: 1.1em;
+	top: 2em;
+	right: 1.5em;
 	z-index: 2;
 
 	@include media($medium-screen) {
 		display: none;
 	}
+
+  i {
+    font-size: 2em;
+    line-height: 0;
+    display: block;
+    color: #002B36;
+  }
 
 	.icon {
 		display: block;
@@ -91,11 +139,18 @@
 	.nav-links {
 		height: auto;
 		overflow: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(239,232,213,.95);
+    box-shadow: 0 10px 10px rgba(0,43,54,.4);
 
 		a {
 			display: block;
-			padding: .5em;
-			text-align:center;
+			margin: 2em 0;
+			text-align: center;
+      color: #002B36;
 		}
 	}
 }
