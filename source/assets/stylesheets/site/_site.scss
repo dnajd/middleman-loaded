@@ -51,7 +51,7 @@ h4, h5, h6 {
     line-height: 0;
 
     @include media($medium-screen) {
-      padding: 2em;
+      padding: 2em 0 2em 0;
 		}
 
     i {
