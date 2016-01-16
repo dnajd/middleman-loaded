@@ -2,70 +2,66 @@
 // ------------------------------------------------------------
 // Site Nav
 // ------------------------------------------------------------
+header {
+  background-color: #eee;
+}
 
 .site-nav {
-    @include clearfix;
+  @include clearfix;
 
-    .navbar-brand {
-        display: block;
+  .navbar-brand {
+    display: block;
     line-height: 0;
-    padding: 2em 0;
     float: left;
     line-height: 0;
+    font-weight:bold;
+    font-size:1em;
+    padding: 1.8em 0;
+  }
+
+  .site-logo {
+    display: block;
+    border-radius: 100%;
+    margin: auto;
+  }
+
+  .nav-links {
+    height: 0;
+    overflow: hidden;
+    float:right;
 
     @include media($medium-screen) {
-      padding: 2em 0 2em 0;
-        }
-
-    i {
-      font-size: 3em;
-      line-height: 0;
-      display: block;
-      color: #002B36;
-    }
+      height: auto;
     }
 
-    .site-logo {
+    a {
+      @include trailing-hovers;
+      @include media($medium-screen) {
         display: block;
-        border-radius: 100%;
-        margin: auto;
-    }
-
-    .nav-links {
-        height: 0;
-        overflow: hidden;
-
-        @include media($medium-screen) {
-            height: auto;
-        }
-
-        a {
-            @include trailing-hovers;
-            @include media($medium-screen) {
-                display: block;
-                float: left;
-                line-height: 0;
+        float: left;
+        line-height: 0;
         font-weight: bold;
         color: #444;
 
         // I removed the top and bottom padding of the header
         // and fattened up the touch targets on these links.
         // Now they're easier to click.
-                padding: 1.5em;
+        padding: 1.8em;
+
 
         &:hover {
           background: #002B36;
           color: #EFE8D5;
         }
-            }
-        }
-
-        .nav-right {
-            @include media($medium-screen) {
-                float: right;
-            }
-        }
+      }
     }
+
+    .nav-right {
+      @include media($medium-screen) {
+        float: right;
+      }
+    }
+  }
 }
 
 // ------------------------------------------------------------
@@ -73,14 +69,14 @@
 // ------------------------------------------------------------
 
 .mobile-menu {
-    position: absolute;
-    top: 2em;
-    right: 1.5em;
-    z-index: 2;
+  position: absolute;
+  top: 2em;
+  right: 1.5em;
+  z-index: 2;
 
-    @include media($medium-screen) {
-        display: none;
-    }
+  @include media($medium-screen) {
+    display: none;
+  }
 
   i {
     font-size: 2em;
@@ -89,31 +85,59 @@
     color: #002B36;
   }
 
-    .icon {
-        display: block;
-        font-size: 2em;
-        cursor: pointer;
-    }
+  .icon {
+    display: block;
+    font-size: 2em;
+    cursor: pointer;
+  }
 }
 
 // Menu active
 .menu-active {
 
-    .nav-links {
-        height: auto;
-        overflow: auto;
+  .nav-links {
+    height: auto;
+    overflow: auto;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    background: rgba(239,232,213,.95);
+    background: #666666;
     box-shadow: 0 10px 10px rgba(0,43,54,.4);
 
-        a {
-            display: block;
-            margin: 2em 0;
-            text-align: center;
-      color: #002B36;
-        }
+    a {
+      display: block;
+      margin: 2em 0;
+      text-align: center;
+      color: #fff;
+
+      @include media($medium-screen) {
+        color: #002B36;
+      }
     }
+  }
 }
+
+/*
+////////////////////
+// ALT HEADER
+
+header {
+  background-color: #fff;
+}
+.site-nav {
+  .navbar-brand {
+    padding: 1.8em 0;
+
+    @include media($medium-screen) {
+      width:100%;
+      padding: .8em 0 .8em 0;
+      border-bottom: 5px solid #666666;
+      font-size:60px;
+    }
+  }
+  .nav-links {
+    float:left;
+  }
+}
+*/
