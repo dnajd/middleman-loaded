@@ -1,0 +1,119 @@
+
+// ------------------------------------------------------------
+// Site Nav
+// ------------------------------------------------------------
+
+.site-nav {
+    @include clearfix;
+
+    .navbar-brand {
+        display: block;
+    line-height: 0;
+    padding: 2em 0;
+    float: left;
+    line-height: 0;
+
+    @include media($medium-screen) {
+      padding: 2em 0 2em 0;
+        }
+
+    i {
+      font-size: 3em;
+      line-height: 0;
+      display: block;
+      color: #002B36;
+    }
+    }
+
+    .site-logo {
+        display: block;
+        border-radius: 100%;
+        margin: auto;
+    }
+
+    .nav-links {
+        height: 0;
+        overflow: hidden;
+
+        @include media($medium-screen) {
+            height: auto;
+        }
+
+        a {
+            @include trailing-hovers;
+            @include media($medium-screen) {
+                display: block;
+                float: left;
+                line-height: 0;
+        font-weight: bold;
+        color: #444;
+
+        // I removed the top and bottom padding of the header
+        // and fattened up the touch targets on these links.
+        // Now they're easier to click.
+                padding: 1.5em;
+
+        &:hover {
+          background: #002B36;
+          color: #EFE8D5;
+        }
+            }
+        }
+
+        .nav-right {
+            @include media($medium-screen) {
+                float: right;
+            }
+        }
+    }
+}
+
+// ------------------------------------------------------------
+// Mobile Menu
+// ------------------------------------------------------------
+
+.mobile-menu {
+    position: absolute;
+    top: 2em;
+    right: 1.5em;
+    z-index: 2;
+
+    @include media($medium-screen) {
+        display: none;
+    }
+
+  i {
+    font-size: 2em;
+    line-height: 0;
+    display: block;
+    color: #002B36;
+  }
+
+    .icon {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+    }
+}
+
+// Menu active
+.menu-active {
+
+    .nav-links {
+        height: auto;
+        overflow: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(239,232,213,.95);
+    box-shadow: 0 10px 10px rgba(0,43,54,.4);
+
+        a {
+            display: block;
+            margin: 2em 0;
+            text-align: center;
+      color: #002B36;
+        }
+    }
+}
