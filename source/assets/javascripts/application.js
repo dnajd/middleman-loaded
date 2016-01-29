@@ -13,6 +13,13 @@
 // ===========
 //= require_tree .
 
-// init
-// ====
-//= require init
+$(document).ready(function() {
+
+  var mobileMenu = new MobileMenu({
+    gripper: $('.mobile-menu'),
+    container: $('nav')
+  });
+
+  mobileMenu.init();
+
+});

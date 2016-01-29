@@ -1,11 +1,27 @@
 <nav class="site-nav container" role="navigation">
   <% link_to 'https://github.com/dnajd/middleman-loaded', class: 'navbar-brand', target: '_blank' do %>
     Middleman Loaded
- <% end %>
+  <% end %>
 
-  <div class="nav-links">
-    <%= link_to 'home','/' %>
-    <%= link_to 'docs','/docs/' %>
-  </div>
+  <ul class="nav-links">
+    <li><%= link_to 'home','/' %>
+      <ul></ul>
+    </li>
+    <li><i class="fa fa-angle-double-right"></i><%= link_to 'docs','/docs/' %>
+      <ul>
+        <li><%= link_to 'bitters','/docs/bitters' %></li>
+        <li><%= link_to 'markdown','/docs/markdown' %></li>
+      </ul>
+    </li>
+    <li><i class="fa fa-angle-double-right"></i><%= link_to 'github', 'https://github.com/dnajd/rails-loaded' %>
+      <ul>
+        <li><%= link_to "rails", "https://github.com/dnajd/rails-loaded" %></li>
+        <li><%= link_to "middleman", "https://github.com/dnajd/middleman-loaded" %></li>
+        <li><%= link_to "ruby tester", "https://github.com/dnajd/ruby_tester" %></li>
+        <li><%= link_to "load runner", "https://github.com/dnajd/load_runner" %></li>
+      </ul>
+    </li>
+  </ul>
+
   <div class="mobile-menu"><i class="fa fa-navicon"></i></div>
 </nav>

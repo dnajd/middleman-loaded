@@ -1,3 +1,4 @@
+
 // ------------------------------------------------------------
 // Layout
 // ------------------------------------------------------------
@@ -15,6 +16,7 @@
   @include media($medium-screen) {
     border-bottom:none;
   }
+  background-color: $white-smoke;
 }
 
 .site-main {
