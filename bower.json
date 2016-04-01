@@ -10,6 +10,6 @@
      "neat": "1.4.0",
      "waypoints": "~2.0.4",
      "fastclick": "~0.6.11",
-     "social-sharing-buttons": "*"
+     "social-sharing-buttons": "https://github.com/cshold/social-sharing-buttons.git#*"
    }
  }

@@ -7,6 +7,7 @@
 //= require jquery-waypoints-2.0.4/waypoints.js
 //= require jquery-waypoints-2.0.4/waypoints-sticky.js
 //= require fitvids-1.0.3/jquery.fitvids.js
+//= require social-sharing-buttons/social-buttons.js
 
 // javascripts
 // ===========
