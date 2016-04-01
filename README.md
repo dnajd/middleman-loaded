@@ -47,17 +47,18 @@ bundle exec middleman deploy
 
 ## CSS & JS Libraries
 
-| Package           | Description                                  |
-| ----------------- | -------------------------------------------- |
-| jquery            | The Write Less, Do More, JavaScript Library  |
-| bourbon           | A Sass Mixin Library                         |
-| neat              | Grid framework for Sass and Bourbon          |
-| magnific-popup    | Lightbox: responsive, customizable & fast    |
-| royalslider       | Slideshow: responsive, customizable & fast   |
-| jquery-waypoints  | Scroll position links                        |
-| fastclick         | Remove 300ms mobile delay                    |
-| fitvids           | Responsive videos                            |
-| mfglabs-iconset   | Awesome web font icon                        |
+| Package                 | Description                                  |
+| -----------------       | -------------------------------------------- |
+| jquery                  | The Write Less, Do More, JavaScript Library  |
+| bourbon                 | A Sass Mixin Library                         |
+| neat                    | Grid framework for Sass and Bourbon          |
+| magnific-popup          | Lightbox: responsive, customizable & fast    |
+| royalslider             | Slideshow: responsive, customizable & fast   |
+| jquery-waypoints        | Scroll position links                        |
+| fastclick               | Remove 300ms mobile delay                    |
+| fitvids                 | Responsive videos                            |
+| font-awesome            | Awesome web font icon                        |
+| social-sharing-buttons  | Social sharing icons                         |
 
 
 ## SASS Mixins

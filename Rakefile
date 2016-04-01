@@ -8,3 +8,4 @@ task :refresh_bitters do
   sh 'cd ' + bitters_dest + ' && bundle exec bitters install '
 
 end
+

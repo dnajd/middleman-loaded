@@ -6,7 +6,6 @@
 //= require royalslider/jquery.royalslider.js
 //= require jquery-waypoints-2.0.4/waypoints.js
 //= require jquery-waypoints-2.0.4/waypoints-sticky.js
-//= require responsive-images/responsive-img.js
 //= require fitvids-1.0.3/jquery.fitvids.js
 
 // javascripts
